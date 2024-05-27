@@ -120,5 +120,3 @@ Data Source: Google Advanced Data Analytics Course
 Templates for executive summary: Google Advanced Data Analytics Course
 
 Readme.so
-
-# Project-No.6-XGBoost-RandomForest-ClaimClassification
