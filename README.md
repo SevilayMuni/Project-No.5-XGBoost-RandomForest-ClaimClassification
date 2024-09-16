@@ -23,7 +23,7 @@ TikTok videos receive a large number of user reports for many different reasons.
 [<img src="https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-EDA/Distribution-of-Total-Views-vs-Claim-Status.png" width="500"/>](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-EDA/Distribution-of-Total-Views-vs-Claim-Status.png)
 - **Claim videos have a higher view rate** than opinion videos.
 
-[<img src="https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-EDA/Video-View-Count-vs-Like-Count-Claim-Status.png" width="400"/>](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-EDA/Video-View-Count-vs-Like-Count-Claim-Status.png)
+[<img src="https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-EDA/Video-View-Count-vs-Like-Count-Claim-Status.png" width="500"/>](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-EDA/Video-View-Count-vs-Like-Count-Claim-Status.png)
 - **Claim videos also have a higher rate of likes** on average, so they are more favorably received as well.
 - **Claim videos receive more engagement via comments and shares** than opinion videos.
 - For claim videos, banned authors have slightly higher likes/view and shares/view than active authors or those under review.
@@ -99,13 +99,13 @@ Subsequent analysis indicated that the primary predictor was ‘video view count
 Overall, **videos with higher user engagement levels were much more likely to be claims.**
 - In fact, no opinion video had more than 10,000 views.
 
-![image4](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Feature-Importance-XGBoost.png)
+[<img src="https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Feature-Importance-XGBoost.png" width="600"/>](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Feature-Importance-XGBoost.png)
 For **XGBoost**, the most predictive features:
 - 'video_view_count' 
 - 'video_share_count'
 - 'author_ban_status_banned'
 
-![image5](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Feature-Importance-Random-Forest.png)
+[<img src="https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Feature-Importance-Random-Forest.png" width="600"/>](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Feature-Importance-Random-Forest.png)
 For **Random Forest**, the most predictive features:
 - 'video_view_count'
 - 'video_like_count'
