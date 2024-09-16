@@ -6,7 +6,8 @@ I carried out **EDA** on the dataset. The goal of EDA was to investigate the imp
 **Statistical analysis** and **hypothesis testing** verified that if a user is verified, they are much more likely to post opinions. Thus, a **logistic regression** model that predicts verified_status was built.
 
 I built **random forest** and **XGBoost** models. Both models were used to predict on validation dataset, and final model selection was determined by the model with the best recall score. **XGBoost was chosen as a final model, then it is used to score a test dataset to estimate future performance.**
-*The confusion matrix above displays the performance of final XGBoost model on the test data.*
+
+**The confusion matrix displays the performance of final XGBoost model on the test data.**
 [<img src="https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Confusion-Matrix-XGBoost-TestData.png" width="500"/>](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Confusion-Matrix-XGBoost-TestData.png)
 
 ## Business Understanding
