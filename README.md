@@ -6,8 +6,8 @@ I carried out **EDA** on the dataset. The goal of EDA was to investigate the imp
 **Statistical analysis** and **hypothesis testing** verified that if a user is verified, they are much more likely to post opinions. Thus, a **logistic regression** model that predicts verified_status was built.
 
 I built **random forest** and **XGBoost** models. Both models were used to predict on validation dataset, and final model selection was determined by the model with the best recall score. **XGBoost was chosen as a final model, then it is used to score a test dataset to estimate future performance.**
-![image-1](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Confusion-Matrix-XGBoost-TestData.png)
 *The confusion matrix above displays the performance of final XGBoost model on the test data.*
+[<img src="https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Confusion-Matrix-XGBoost-TestData.png" width="700"/>](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Confusion-Matrix-XGBoost-TestData.png)
 
 ## Business Understanding
 TikTok videos receive a large number of user reports for many different reasons. Not all reported videos can be reviewed by a human moderator. Videos that make claims are much more likely to contain content that violates the TikTok’s terms of service. **The goal is developing method to identify videos that make claims to prioritize them for review.** 
@@ -16,7 +16,7 @@ TikTok videos receive a large number of user reports for many different reasons.
 - Of total 19,382 samples in this dataset, just under 50% are claims — 9,608.
 - **Engagement level is strongly correlated with claim status.**
 
-![image](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-EDA/Author-Ban-Status-vs-Avg-View-Count.png)
+[<img src="https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-EDA/Author-Ban-Status-vs-Avg-View-Count.png" width="800"/>](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-EDA/Author-Ban-Status-vs-Avg-View-Count.png)
 - Banned authors and those under review get more views, likes, and shares than active authors.
 - **Banned authors have a median share count 33 times the median share count of active authors!**
 
