@@ -68,27 +68,30 @@ Previous analysis of the dataset has showed that there are ~20,000 videos in the
 
 ### Tuning Hyperparameters
 Parameters used for **random forest**:
+```
 {'max_depth': 5,
  'max_features': 0.5,
  'max_samples': 0.8,
  'min_samples_leaf': 2,
  'min_samples_split': 4,
  'n_estimators': 75}
+```
 
 Parameters used for **XGBoost**:
+```
 {'learning_rate' = 0.1, 
 'max_depth' = 4, 
 'min_child_weight' = 5, 
 'n_estimators' = 300}
-
+```
 
 ## Model Results
+| Model weighted avg.| Precision | Recall | F1 |
+| --- | --- | --- | --- |
+| `Random Forest` | 0.99 | 0.99 | 0.99 |
+| `XGBOOST` | 1.00 | 1.00 | 1.00 |
 
-    Random Forest   Precision  Recall   F1  
-    weighted avg.   0.99       0.99     0.99
-    
-    XGBoost   Precision  Recall   F1  
-    weighted avg.   1.00       1.00     1.00
+
 ## Conclusion
 
 Both random forest and XGBoost models performed exceptionally well. 
@@ -100,12 +103,14 @@ Overall, **videos with higher user engagement levels were much more likely to be
 - In fact, no opinion video had more than 10,000 views.
 
 [<img src="https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Feature-Importance-XGBoost.png" width="600"/>](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Feature-Importance-XGBoost.png)
+
 For **XGBoost**, the most predictive features:
 - 'video_view_count' 
 - 'video_share_count'
 - 'author_ban_status_banned'
 
 [<img src="https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Feature-Importance-Random-Forest.png" width="600"/>](https://github.com/SevilayMuni/Project-No.5-XGBoost-RandomForest-ClaimClassification/blob/main/graphs-from-Models/Feature-Importance-Random-Forest.png)
+
 For **Random Forest**, the most predictive features:
 - 'video_view_count'
 - 'video_like_count'
